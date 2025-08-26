@@ -1,0 +1,41 @@
+.inverted-img {
+    clip-path: path("M30,0H606A30,30 0,0,1 636,30V604A30,30 0,0,1 606,634H30A30,30 0,0,1 0,604V165A30,30 0,0,1 30,135L305,135A30,30 0,0,0 335,105L335,30A30,30 0,0,1 365,0");
+    width: 636px;
+    height: 634px;
+    background-color: #fff;
+    aspect-ratio: 318 / 317;
+}
+
+.inverted-cards {
+	clip-path: path("M36,0H439A36,36 0,0,1 475,36V129A36,36 0,0,1 439,165L411,165A36,36 0,0,0 375,201L375,229A36,36 0,0,1 339,265H36A36,36 0,0,1 0,229V36A36,36 0,0,1 36,0Z");
+	width: 475px;
+	height: 265px;
+	background-color: #fff;
+	aspect-ratio: 95 / 53;
+}
+
+.comments-scroll-container {
+    position: relative;
+}
+
+.comments-scroll-content {
+    animation: infiniteScroll 20s linear infinite;
+}
+
+@keyframes infiniteScroll {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-50%);
+    }
+}
+
+.quote-svg {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 90px;
+    height: 90px;
+}
+
