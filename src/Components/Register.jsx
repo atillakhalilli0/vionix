@@ -2,7 +2,7 @@ import React from "react";
 
 function Register() {
    return (
-      <section className="my-32">
+      <section className="my-32 mx-36">
          <div className="container mx-auto text-center bg-white/80 rounded-[30px] py-16">
             <p className="uppercase inline p-3 text-[14px] font-[400] border-[1px] border-[#5519A3] rounded-[50px]">
                <span className="text-[#5519A3] text-xl">●</span> QEYDİYYAT

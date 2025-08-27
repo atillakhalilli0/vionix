@@ -1,26 +1,29 @@
-import React from "react";
-import herolines from "../assets/herolines.png";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
+import "swiper/css";
+import herolines from "../assets/herolines.svg";
 import hero from "../assets/hero.png";
 import pcicon from "../assets/pcicon.svg";
 import chaticon from "../assets/chaticon.svg";
 import globalicon from "../assets/global-search-icon.svg";
 import careericon from "../assets/careericon.svg";
-import logo4 from "../assets/logo-04.png";
-import aim from "../assets/aimlogo.png";
-import iria from "../assets/irialogo.png";
-import ptm from "../assets/ptmlogo.png";
-import rin from "../assets/rinlogo.png";
-import sih from "../assets/sihlogo.png";
-
-import logotrans from "../assets/logo-trans-01.png";
+import logo4 from "../assets/logo-04.svg";
+import logotrans from "../assets/logo-trans-01.svg";
+import aim from "../assets/aimlogo.svg";
+import iria from "../assets/irialogo.svg";
+import ptm from "../assets/ptmlogo.svg";
+import rin from "../assets/rinlogo.svg";
+import sih from "../assets/sihlogo.svg";
 
 const Header = () => {
    return (
-      <div className="relative overflow-x-hidden">
+      <div className="relative overflow-x-hidden px-36">
          <header className="relative z-10 px-6 py-6">
-            <img className="absolute left-0" src={herolines} alt="herolines" />
-            <nav className="bg-white/90 px-4 py-2 rounded-[50px] flex items-center justify-between container mx-auto">
-               <img className="object-contain h-16" src={logotrans} alt="logo" />
+            <img className="absolute -left-36 top-0 z-0" src={herolines} alt="herolines" />
+            <nav className="bg-white/90 sticky px-4 py-2 rounded-[50px] flex items-center justify-between container mx-auto">
+               <a href="/">
+                  <img className="object-contain h-16 cursor-pointer z-30" src={logotrans} alt="logo" />
+               </a>
                <div className="hidden ml-[30%] md:flex items-center font-[500] space-x-8 text-base">
                   <a
                      href="#"
@@ -32,7 +35,7 @@ const Header = () => {
                      Akademiya
                   </a>
                   <a
-                     href="#"
+                     href="#advantages"
                      className="relative text-gray-700 hover:text-purple-600 transition-colors duration-300
                after:content-[''] after:block after:absolute after:left-0 after:-bottom-1
                after:w-full after:h-[2px] after:bg-purple-600
@@ -41,7 +44,7 @@ const Header = () => {
                      Üstünlüklər
                   </a>
                   <a
-                     href="#"
+                     href="#education"
                      className="relative text-gray-700 hover:text-purple-600 transition-colors duration-300
                after:content-[''] after:block after:absolute after:left-0 after:-bottom-1
                after:w-full after:h-[2px] after:bg-purple-600
@@ -50,7 +53,7 @@ const Header = () => {
                      İxtisaslar
                   </a>
                   <a
-                     href="#"
+                     href="#about"
                      className="relative text-gray-700 hover:text-purple-600 transition-colors duration-300
                after:content-[''] after:block after:absolute after:left-0 after:-bottom-1
                after:w-full after:h-[2px] after:bg-purple-600
@@ -59,7 +62,7 @@ const Header = () => {
                      Haqqımızda
                   </a>
                   <a
-                     href="#"
+                     href="#faq"
                      className="relative text-gray-700 hover:text-purple-600 transition-colors duration-300
                after:content-[''] after:block after:absolute after:left-0 after:-bottom-1
                after:w-full after:h-[2px] after:bg-purple-600
@@ -85,14 +88,12 @@ const Header = () => {
             <div className="container mx-auto relative pb-20 min-h-[700px]">
                <div className="absolute top-24 left-0 max-w-2xl z-20">
                   <h1 className="text-[72px] font-[600] text-gray-900 leading-tight mb-8">
-                     Texnologiya
-                     <br />
-                     dövründə{" "}
-                     <span className="text-purple-600 inline-block align-middle">
-                        <img src={logo4} alt="Vionix Logo" className="inline h-28" />
-                     </span>
-                     <br />
-                     ilə öndə ol
+                     <div className="flex items-center gap-4">Texnologiya</div>
+                     <div className="flex items-center gap-4">
+                        dövründə
+                        <img src={logo4} alt="Vionix Logo" className="h-24" />
+                     </div>
+                     <div className="flex items-center gap-4">ilə öndə ol</div>
                   </h1>
 
                   <button className="bg-[#5519A3] text-white px-16 py-4 rounded-[50px] border-[1px] border-[#5519A3] font-[500] transition-all duration-300 transform hover:bg-white hover:text-[#5519A3] cursor-pointer text-base">İndi Başla</button>
@@ -128,13 +129,72 @@ const Header = () => {
                   </p>
                </div>
             </div>
-            <div className="container mx-auto mt-32 px-32 flex w-full justify-between items-center">
-               <img src={iria} alt="logo" />
-               <img src={sih} alt="logo" />
-               <img src={ptm} alt="logo" />
-               <img src={rin} alt="logo" />
-               <img src={aim} alt="logo" />
-            </div>
+
+            <Swiper
+               slidesPerView={5}
+               spaceBetween={20}
+               loop={true}
+               centeredSlides={false}
+               freeMode={true}
+               grabCursor={false}
+               autoplay={{
+                  delay: 0,
+                  disableOnInteraction: false,
+                  pauseOnMouseEnter: false,
+               }}
+               speed={3000}
+               allowTouchMove={false}
+               modules={[Autoplay]}
+               breakpoints={{
+                  320: {
+                     slidesPerView: 2,
+                     spaceBetween: 10
+                  },
+                  640: {
+                     slidesPerView: 3,
+                     spaceBetween: 15
+                  },
+                  768: {
+                     slidesPerView: 4,
+                     spaceBetween: 20
+                  },
+                  1024: {
+                     slidesPerView: 5,
+                     spaceBetween: 20
+                  }
+               }}
+               className="container mt-10 mx-auto px-4 md:px-32 flex w-full justify-between items-center">
+               <SwiperSlide>
+                  <img src={iria} alt="IRIA logo" className="mx-auto object-contain h-20" />
+               </SwiperSlide>
+               <SwiperSlide>
+                  <img src={sih} alt="SIH logo" className="mx-auto object-contain h-20" />
+               </SwiperSlide>
+               <SwiperSlide>
+                  <img src={ptm} alt="PTM logo" className="mx-auto object-contain h-20" />
+               </SwiperSlide>
+               <SwiperSlide>
+                  <img src={rin} alt="RIN logo" className="mx-auto object-contain h-20" />
+               </SwiperSlide>
+               <SwiperSlide>
+                  <img src={aim} alt="AIM logo" className="mx-auto object-contain h-20" />
+               </SwiperSlide>
+               <SwiperSlide>
+                  <img src={iria} alt="IRIA logo" className="mx-auto object-contain h-20" />
+               </SwiperSlide>
+               <SwiperSlide>
+                  <img src={sih} alt="SIH logo" className="mx-auto object-contain h-20" />
+               </SwiperSlide>
+               <SwiperSlide>
+                  <img src={ptm} alt="PTM logo" className="mx-auto object-contain h-20" />
+               </SwiperSlide>
+               <SwiperSlide>
+                  <img src={rin} alt="RIN logo" className="mx-auto object-contain h-20" />
+               </SwiperSlide>
+               <SwiperSlide>
+                  <img src={aim} alt="AIM logo" className="mx-auto object-contain h-20" />
+               </SwiperSlide>
+            </Swiper>
          </header>
       </div>
    );

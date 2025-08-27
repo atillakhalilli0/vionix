@@ -40,7 +40,7 @@ function Step() {
    ];
 
    return (
-      <section>
+      <section className="mx-36">
          <div className="container mx-auto text-center">
             <p className="uppercase inline p-3 text-[14px] font-[400] border-[1px] border-[#5519A3] rounded-[50px]">
                <span className="text-[#5519A3] text-xl">●</span> SƏNİ NƏ GÖZLƏYİR?
@@ -50,8 +50,8 @@ function Step() {
 
          <div className="container my-10 mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10">
             {steps.map((step) => (
-               <div key={step.id} className="group flex flex-col justify-center items-center text-center">
-                  <div className="relative border-[1px] bg-white transition duration-300 group-hover:bg-[#6A1FCC] border-[#909090] rounded-full p-5 flex items-center justify-center">
+               <div key={step.id} className="flex flex-col justify-center items-center text-center">
+                  <div className="relative border-[1px] bg-white transition duration-300 group hover:bg-[#6A1FCC] border-[#909090] rounded-full p-5 flex items-center justify-center">
                      <img className="scale-90 transition duration-300 group-hover:invert" src={step.img} alt={step.title} />
                      <span className="absolute text-[22px] -top-3 bg-white -right-3 border-[1px] w-12 h-12 rounded-full p-2 border-[#909090] font-bold">{step.id}</span>
                   </div>

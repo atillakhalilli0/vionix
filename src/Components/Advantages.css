@@ -1,0 +1,7 @@
+.inverted-advantages {
+	clip-path: path("M30,0H606A30,30 0,0,1 636,30V444A30,30 0,0,1 606,474H315A30,30 0,0,1 285,444L285,419A30,30 0,0,0 255,389L30,389A30,30 0,0,1 0,359V30A30,30 0,0,1 30,0Z");
+	width: 636px;
+	height: 474px;
+	background-color: #513D34;
+	aspect-ratio: 106 / 79;
+}

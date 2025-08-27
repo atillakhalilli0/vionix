@@ -7,7 +7,7 @@ import about3 from "../assets/about3.jpg";
 import about4 from "../assets/about4.jpg";
 function About() {
    return (
-      <section className="my-32">
+      <section id="about" className="my-32 mx-36">
          <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="relative w-full h-[500px]">
                <div className="absolute top-0 left-0 border-[1px] rounded-full py-4 pl-4 pr-10 border-[#909090] flex items-center gap-3 z-10 bg-white">

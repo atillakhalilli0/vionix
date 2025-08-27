@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import plus from "../assets/plus.svg";
 import minus from "../assets/minus.svg";
+import lines3 from "../assets/lines3.svg";
 
 function Faq() {
    const [activeIndex, setActiveIndex] = useState(null);
@@ -33,8 +34,10 @@ function Faq() {
    };
 
    return (
-      <section className="py-32">
-         <div className="container mx-auto text-center">
+      <section id="faq" className="py-32 mx-36 relative">
+         <img className="absolute -left-36 top-[5%] z-0" src={lines3} alt="line" />
+
+         <div className="container relative mx-auto text-center">
             <p className="uppercase inline p-3 text-[14px] font-[400] border border-[#5519A3] rounded-full">
                <span className="text-[#5519A3] text-xl">●</span> SUALIN VAR?
             </p>
@@ -43,7 +46,7 @@ function Faq() {
             </h3>
          </div>
 
-         <div className="container mx-auto px-32 flex flex-col gap-6 mt-12">
+         <div className="container relative mx-auto px-32 flex flex-col gap-6 mt-12 z-40">
             {faqs.map((faq, index) => (
                <div key={index} className="border border-[#D1BAEF] rounded-[24px] bg-white py-7 px-8 cursor-pointer transition-all duration-400" onClick={() => toggleFaq(index)}>
                   <div className="flex justify-between items-center">

@@ -22,6 +22,10 @@
     animation: infiniteScroll 20s linear infinite;
 }
 
+.comments-scroll-container:hover .comments-scroll-content {
+    animation-play-state: paused;
+}
+
 @keyframes infiniteScroll {
     0% {
         transform: translateY(0);

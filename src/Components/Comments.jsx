@@ -37,15 +37,15 @@ function Comments() {
    const duplicatedComments = [...comments, ...comments];
 
    return (
-      <section className="my-32">
+      <section className="my-32 mx-36">
          <div className="container mx-auto flex justify-center gap-32">
             <div className="relative">
-               <div className="absolute top-0 group hover:bg-[#6A1FCC] left-0 flex items-center gap-10 p-6 bg-white rounded-[30px] max-w-max transition-all duration-300">
+               <div className="absolute top-0 left-0 flex items-center gap-10 p-6 bg-white rounded-[30px] max-w-max transition-all duration-300">
                   <h5 className="group-hover:text-white text-[24px] font-semibold transition-all duration-300">
                      Tələbələrimizin <br />
                      səmimi rəyləri
                   </h5>
-                  <svg className="group-hover:bg-white text-white transition-all duration-300 group-hover:text-[#6A1FCC] p-2 bg-[#6A1FCC] rounded-full" width="40" height="40" viewBox="0 0 25 24" xmlns="http://www.w3.org/2000/svg">
+                  <svg className="text-white transition-all duration-300 p-2 bg-[#6A1FCC] rounded-full" width="40" height="40" viewBox="0 0 25 24" xmlns="http://www.w3.org/2000/svg">
                      <path
                         d="M17.4699 5.09397C17.6108 4.95314 17.8018 4.87402 18.0009 4.87402C18.2001 4.87402 18.3911 4.95314 18.5319 5.09397C18.6728 5.2348 18.7519 5.42581 18.7519 5.62497C18.7519 5.82413 18.6728 6.01514 18.5319 6.15597L5.78195 18.906C5.71222 18.9757 5.62943 19.031 5.53832 19.0688C5.44721 19.1065 5.34956 19.1259 5.25095 19.1259C5.15233 19.1259 5.05468 19.1065 4.96357 19.0688C4.87246 19.031 4.78968 18.9757 4.71995 18.906C4.65022 18.8362 4.5949 18.7535 4.55716 18.6623C4.51942 18.5712 4.5 18.4736 4.5 18.375C4.5 18.2764 4.51942 18.1787 4.55716 18.0876C4.5949 17.9965 4.65022 17.9137 4.71995 17.844L17.4699 5.09397Z"
                         fill="currentColor"

@@ -48,7 +48,7 @@ const programs = [
 
 function Education() {
    return (
-      <section className="py-32">
+      <section id="education" className="py-32 mx-36">
          <div className="container mx-auto mb-10">
             <p className="uppercase inline p-3 text-[14px] font-[400] border-[1px] border-[#5519A3] rounded-[50px]">
                <span className="text-[#5519A3] text-xl">●</span> İXTİSASLARIMIZ
@@ -59,8 +59,8 @@ function Education() {
          <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 space-y-10">
             {programs.map((item) => (
                <div key={item.id} className="relative">
-                  <div className="inverted-education flex flex-col justify-center p-6 relative z-10">
-                     <h5 className="text-[24px] font-[600] mb-6">{item.title}</h5>
+                  <div className="inverted-education flex flex-col justify-center p-6 z-10">
+                     <h5 className="text-[24px] font-[600] mb-8">{item.title}</h5>
                      <p className="text-base font-[400] w-[90%] mb-6">{item.desc}</p>
                      <div className="flex justify-between items-center">
                         <button className="bg-[#5519A3] px-10 py-3 rounded-[50px] border border-[#5519A3] hover:bg-white text-white hover:text-black transition-all duration-300 cursor-pointer text-base font-[500]">Müraciət Et</button>
@@ -68,7 +68,7 @@ function Education() {
                      </div>
                   </div>
 
-                  <div className="absolute top-0 right-24 bg-white p-4 rounded-[20px] border-[1px] border-[#D1BAEF] z-20">
+                  <div className="absolute top-0 right-12 bg-white p-4 rounded-[20px] border-[1px] border-[#D1BAEF] z-20">
                      <img src={item.icon} alt={item.title} className="w-14 h-14" />
                   </div>
                </div>
