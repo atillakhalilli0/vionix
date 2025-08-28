@@ -1,12 +1,12 @@
 .inverted-education {
-  clip-path: path("M25,0H288A25,25 0,0,1 313,25L313,82A23,23 0,0,0 336,105L393,105A25,25 0,0,1 418,130V294A25,25 0,0,1 393,319H25A25,25 0,0,1 0,294V25A25,25 0,0,1 25,0Z");
-  width: 418px;
-  height: 319px;
+  clip-path: path("M24,0H311A24,24 0,0,1 335,24L335,76A24,24 0,0,0 359,100L416,100A24,24 0,0,1 440,124V296A24,24 0,0,1 416,320H24A24,24 0,0,1 0,296V24A24,24 0,0,1 24,0Z");
+  width: 440px;
+  height: 320px;
   background-color: #FFFFFF;
-  aspect-ratio: 416 / 317;
-  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20418%20319%22%3E%3Cpath%20d%3D%22M25%2C1H288A24%2C24%200%2C0%2C1%20312%2C25L312%2C82A24%2C24%200%2C0%2C0%20336%2C106L393%2C106A24%2C24%200%2C0%2C1%20417%2C130V294A24%2C24%200%2C0%2C1%20393%2C318H25A24%2C24%200%2C0%2C1%201%2C294V25A24%2C24%200%2C0%2C1%2025%2C1Z%22%20fill%3D%22%23ffffff%22%20%2F%3E%3C%2Fsvg%3E");
+  aspect-ratio: 11 / 8;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 440 319'%3E%3Cpath d='M25,1H293A24,24 0,0,1 317,25L317,82A24,24 0,0,0 342,106L400,106A24,24 0,0,1 424,130V294A24,24 0,0,1 400,318H25A24,24 0,0,1 1,294V25A24,24 0,0,1 25,1Z' fill='%23ffffff'/%3E%3C/svg%3E");
   box-sizing: border-box;
-  transition: all .3s; 
+  transition: all .3s;
   cursor: pointer;
 }
 

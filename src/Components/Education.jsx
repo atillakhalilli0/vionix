@@ -68,7 +68,7 @@ function Education() {
                      </div>
                   </div>
 
-                  <div className="absolute top-0 right-12 bg-white p-4 rounded-[20px] border-[1px] border-[#D1BAEF] z-20">
+                  <div className="absolute top-0 right-7 bg-white p-4 rounded-[20px] border-[1px] border-[#D1BAEF] z-20">
                      <img src={item.icon} alt={item.title} className="w-14 h-14" />
                   </div>
                </div>
