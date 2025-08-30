@@ -40,8 +40,8 @@ function Comments() {
       <section className="my-32 mx-36">
          <div className="container mx-auto flex justify-center gap-32">
             <div className="relative">
-               <div className="absolute top-0 left-0 flex items-center gap-10 p-6 bg-white rounded-[30px] max-w-max transition-all duration-300">
-                  <h5 className="group-hover:text-white text-[24px] font-semibold transition-all duration-300">
+               <div className="absolute top-0 left-0 flex items-center gap-10 p-6 bg-white rounded-[30px] transition-all duration-300">
+                  <h5 className="text-[24px] font-semibold transition-all duration-300">
                      Tələbələrimizin <br />
                      səmimi rəyləri
                   </h5>
@@ -71,7 +71,7 @@ function Comments() {
                                  <img key={idx} src={star} alt="star" />
                               ))}
                            </div>
-                           <p className="absolute top-16 left-8 text-base font-[400] max-w-[400px]">{c.text}</p>
+                           <p className="absolute top-16 left-8 text-base font-[400] w-[80%]">{c.text}</p>
                            <div className="absolute top-48 left-8 flex gap-5">
                               <img className="w-12 h-12 object-cover rounded-full" src={c.img} alt={c.name} />
                               <div>

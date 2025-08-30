@@ -86,10 +86,10 @@ function Footer() {
                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3029.9354461921325!2d49.6689375!3d40.58718030000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4030971d8184f87d%3A0xd95822e16020e50e!2sMerkez%20Plaza!5e0!3m2!1str!2saz!4v1756231094855!5m2!1str!2saz"
                      width="100%"
                      height="160"
-                     allowfullscreen=""
+                     allowFullScreen="yes"
                      loading="lazy"
                      className="rounded-lg border"
-                     referrerpolicy="no-referrer-when-downgrade"></iframe>
+                     referrerPolicy="no-referrer-when-downgrade"></iframe>
                </div>
             </div>
          </div>

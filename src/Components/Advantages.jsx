@@ -11,13 +11,13 @@ import star from "../assets/star.svg";
 function Advantages() {
    return (
       <section id="advantages" className="mx-36">
-         <div className="container mx-auto flex justify-between items-center my-16 gap-10">
-            <div className="w-1/2 flex justify-center relative">
+         <div className="container mx-auto flex justify-between items-center py-16 gap-10">
+            <div className="max-w-[600px] relative">
                <div className="inverted-advantages">
                   <img src={card} alt="card" />
                </div>
-               <div className="bg-[#5519A3] px-5 py-4 rounded-[50px] absolute bottom-0 left-0 flex gap-5 items-center">
-                  <div className="flex -space-x-4">
+               <div className="bg-[#5519A3] px-5 py-4 w-[45%] h-[19%] rounded-[50px] absolute bottom-0 left-0 flex gap-5 items-center">
+                  <div className="flex -space-x-8">
                      <img className="w-14 h-14 object-cover rounded-full border-2 border-white" src={user1} alt="user" />
                      <img className="w-14 h-14 object-cover rounded-full border-2 border-white" src={user2} alt="user" />
                      <img className="w-14 h-14 object-cover rounded-full border-2 border-white" src={user3} alt="user" />
